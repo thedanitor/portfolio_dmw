@@ -2,4 +2,16 @@
     height: 40%;
     width: 40%;
     border-radius: 50%;
+    
+}
+
+#photoCon {
+    transform: translateX(0) translateY(0) scale(1) rotate(0deg);
+    transition: transform 1s ease, scale 1s ease, visibility 1s ease, rotate 1s ease;
+    visibility: visible;
+}
+
+#photoCon.hidden {
+    transform: translateX(-100%) translateY(-100%) scale(0.25)  rotate(-1turn);
+    visibility: hidden;
 }
