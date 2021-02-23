@@ -1,9 +1,6 @@
-import React from 'react'
+import React from "react";
+import "./style.css";
 
 export default function Skills() {
-    return (
-        <div>
-            Skills
-        </div>
-    )
-};
+  return <div id="Skills">Skills</div>;
+}
