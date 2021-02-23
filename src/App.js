@@ -6,18 +6,20 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
+import Header from "./components/Header";
 
 function App() {
   return (
     <div className="App">
       <NavMenu />
-      <div>
+      {/* <div> */}
         <h1>Hello, World. My name is Dan and I like web development!</h1>
+       <Header />
         <Home />
         <About />
         <Projects />
         <Skills />
-      </div>
+      {/* </div> */}
     </div>
   );
 }
