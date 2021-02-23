@@ -1,10 +1,9 @@
-import './App.css';
-// import '../node_modules/uikit/src/js/';
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      Hello, World. My name is Dan and I like web development!
+      <h1>Hello, World. My name is Dan and I like web development!</h1>
     </div>
   );
 }
