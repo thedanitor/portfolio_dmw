@@ -10,9 +10,9 @@ export default function NavMenu() {
   const handleScroll = () => {
     let scrollHeight = window.pageYOffset;
     if (scrollHeight > window.innerHeight * 0.1) {
-      setBrandClass("show");
-    } else {
       setBrandClass("");
+    } else {
+      setBrandClass("hide");
     }
   };
 
@@ -28,6 +28,7 @@ export default function NavMenu() {
           id="danPhoto"
           src={DanPhoto}
            alt="Dan Weikart"
+           class={brandClass}
            />
         </Navbar.Brand>
         <Nav className="mr-auto">

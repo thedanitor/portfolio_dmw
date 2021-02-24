@@ -2,5 +2,12 @@
     height: 80px;
     width: 80px;
     border-radius: 50%;
+    transform: scale(1);
+    visibility: visible;
+    transition: transform 0.5s ease, scale 0.5s ease, visibility 0.5s ease;
+}
 
+#danPhoto.hide {
+    transform: scale(0);
+    visibility: hidden;
 }

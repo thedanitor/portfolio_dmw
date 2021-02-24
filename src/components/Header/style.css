@@ -8,11 +8,11 @@
 #photoCon {
     margin-top: 122px;
     transform: translateX(0) translateY(0) scale(1) rotate(0deg);
-    transition: transform 1s ease, scale 1s ease, visibility 1s ease, rotate 1s ease;
+    transition: transform 0.5s ease, scale 0.5s ease, visibility 0.5s ease, rotate 0.5s ease;
     visibility: visible;
 }
 
 #photoCon.hidden {
-    transform: translateX(-100%) translateY(-100%) scale(0.25)  rotate(-1turn);
+    transform: translateX(-100%) translateY(-100%) scale(0.25)  rotate(-2turn);
     visibility: hidden;
 }
