@@ -6,13 +6,17 @@ import "./style.css";
 
 export default function NavMenu() {
   const [brandClass, setBrandClass] = useState("");
+  const [navClass, setNavClass] = useState("");
+
 
   const handleScroll = () => {
     let scrollHeight = window.pageYOffset;
     if (scrollHeight > window.innerHeight * 0.1) {
-      setBrandClass("");
+      setBrandClass("show");
+      setNavClass("opaque");
     } else {
-      setBrandClass("hide");
+      setBrandClass("");
+      setNavClass("trans");
     }
   };
 
@@ -22,14 +26,17 @@ export default function NavMenu() {
 
   return (
     <div>
-      <Navbar fixed="top" bg="dark" variant="dark">
+      <Navbar fixed="top" 
+      // bg={navBg} variant={navText}
+      className={navClass}
+      >
         <Navbar.Brand href="#Home">
-          <img 
-          id="danPhoto"
-          src={DanPhoto}
-           alt="Dan Weikart"
-           class={brandClass}
-           />
+          <img
+            id="danPhoto"
+            src={DanPhoto}
+            alt="Dan Weikart"
+            class={brandClass}
+          />
         </Navbar.Brand>
         <Nav className="mr-auto">
           <Nav.Link href="#About">About</Nav.Link>

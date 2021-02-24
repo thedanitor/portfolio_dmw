@@ -1,13 +1,32 @@
+/* default brand photo hidden */
 #danPhoto {
     height: 80px;
     width: 80px;
     border-radius: 50%;
+    transform: scale(0);
+    visibility: hidden;
+}
+
+/* brand photo when show class active */
+#danPhoto.show {
     transform: scale(1);
     visibility: visible;
     transition: transform 0.5s ease, scale 0.5s ease, visibility 0.5s ease;
 }
 
-#danPhoto.hide {
-    transform: scale(0);
-    visibility: hidden;
+/* navbar when opaque applied */
+.navbar.opaque {
+    background-color: rgba(52, 58, 64, 0.5);
+    transition: background-color 0.5s ease;
+}
+/* navbar when trans applied */
+.navbar.trans {
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: background-color 0.5s ease;
+}
+/* nav.link when trans applied to navbar */
+.navbar.trans .nav-link {
+    color: #03A062 !important;
+    font-weight: bold;
+    /* transition: color 1s ease, font-weight 1s; */
 }
