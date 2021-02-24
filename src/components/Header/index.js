@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./style.css";
 import DanPhotoLarge from "../../assets/images/DanWeikart.jpg";
+// import backgroundLg from "./assets/images/Ruby_Beach_Olympic_National_Park_16x9_Large_comp.jpg";
+// import background from "./assets/images/Ruby_Beach_Olympic_National_Park_16x9_1920_comp.jpg";
+// import backgroundSm from "./assets/images/Ruby_Beach_Olympic_National_Park_mobile_comp.jpg";
 
 export default function Header() {
   const [photoConClass, setPhotoConClass] = useState("");
@@ -19,8 +22,10 @@ export default function Header() {
   });
 
   return (
-    <div id="photoCon" className={photoConClass}>
-      <img id="danPhotoLarge" src={DanPhotoLarge} alt="Dan Weikart Large" />
+    <div id="backgroundImg">
+      <div id="photoCon" className={photoConClass}>
+        <img id="danPhotoLarge" src={DanPhotoLarge} alt="Dan Weikart Large" />
+      </div>
     </div>
   );
 }
