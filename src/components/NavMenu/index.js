@@ -1,13 +1,28 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import DanPhoto from "../../assets/images/DanWeikart.jpg";
 import "./style.css";
 
 export default function NavMenu() {
+  const [brandClass, setBrandClass] = useState("");
+
+  const handleScroll = () => {
+    let scrollHeight = window.pageYOffset;
+    if (scrollHeight > window.innerHeight * 0.1) {
+      setBrandClass("show");
+    } else {
+      setBrandClass("");
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+  });
+
   return (
     <div>
-      <Navbar bg="dark" variant="dark">
+      <Navbar fixed="top" bg="dark" variant="dark">
         <Navbar.Brand href="#Home">
           <img 
           id="danPhoto"

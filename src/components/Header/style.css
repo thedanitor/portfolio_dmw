@@ -6,6 +6,7 @@
 }
 
 #photoCon {
+    margin-top: 122px;
     transform: translateX(0) translateY(0) scale(1) rotate(0deg);
     transition: transform 1s ease, scale 1s ease, visibility 1s ease, rotate 1s ease;
     visibility: visible;

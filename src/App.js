@@ -12,14 +12,11 @@ function App() {
   return (
     <div className="App">
       <NavMenu />
-      {/* <div> */}
-        <h1>Hello, World. My name is Dan and I like web development!</h1>
-       <Header />
-        <Home />
-        <About />
-        <Projects />
-        <Skills />
-      {/* </div> */}
+      <Header />
+      <Home />
+      <About />
+      <Projects />
+      <Skills />
     </div>
   );
 }
