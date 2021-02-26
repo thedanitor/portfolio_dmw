@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import "./style.css";
-import DanPhotoLarge from "../../assets/images/DanWeikart.jpg";
-// import backgroundLg from "./assets/images/Ruby_Beach_Olympic_National_Park_16x9_Large_comp.jpg";
-// import background from "./assets/images/Ruby_Beach_Olympic_National_Park_16x9_1920_comp.jpg";
-// import backgroundSm from "./assets/images/Ruby_Beach_Olympic_National_Park_mobile_comp.jpg";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import HeaderPhoto from "../HeaderPhoto";
+import HeaderTextStack from "../HeaderTextStack";
 
 export default function Header() {
   const [photoConClass, setPhotoConClass] = useState("");
@@ -23,9 +24,15 @@ export default function Header() {
 
   return (
     <div id="backgroundImg">
-      <div id="photoCon" className={photoConClass}>
-        <img id="danPhotoLarge" src={DanPhotoLarge} alt="Dan Weikart Large" />
-      </div>
+      <Container>
+        <Row>
+          <Col></Col>
+          <Col id="photoCon" className={photoConClass} xs={6}>
+            <HeaderPhoto />
+          </Col>
+          <HeaderTextStack />
+        </Row>
+      </Container>
     </div>
   );
 }
