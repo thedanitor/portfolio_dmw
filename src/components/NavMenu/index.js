@@ -8,7 +8,6 @@ export default function NavMenu() {
   const [brandClass, setBrandClass] = useState("");
   const [navClass, setNavClass] = useState("");
 
-
   const handleScroll = () => {
     let scrollHeight = window.pageYOffset;
     if (scrollHeight > window.innerHeight * 0.1) {
@@ -26,9 +25,10 @@ export default function NavMenu() {
 
   return (
     <div>
-      <Navbar fixed="top" 
-      // bg={navBg} variant={navText}
-      className={navClass}
+      <Navbar
+        fixed="top"
+        // bg={navBg} variant={navText}
+        className={navClass}
       >
         <Navbar.Brand href="#Home">
           <img
@@ -42,6 +42,10 @@ export default function NavMenu() {
           <Nav.Link href="#About">About</Nav.Link>
           <Nav.Link href="#Projects">Projects</Nav.Link>
           <Nav.Link href="#Skills">Skills</Nav.Link>
+        </Nav>
+        <Nav className="ml-auto">
+          <Nav.Link href="">Dan Weikart</Nav.Link>
+          <Nav.Link href="">Contact</Nav.Link>
         </Nav>
       </Navbar>
     </div>
