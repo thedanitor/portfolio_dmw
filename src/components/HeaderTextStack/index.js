@@ -5,6 +5,8 @@ import Col from "react-bootstrap/Col";
 
 export default function HeaderTextStack() {
   const [loaded, setLoaded] = useState();
+
+  // when DOM loads, apply "loaded" state --> gives h2's className="loaded"
   useEffect(() => {
     setLoaded("loaded");
   }, []);

@@ -16,12 +16,12 @@
 
 /* navbar when opaque applied */
 .navbar.opaque {
-    background-color: rgba(52, 58, 64, 0.5);
+    background-color: rgba(52, 58, 64, 0.9);
     transition: background-color 0.5s ease;
 }
 /* navbar when trans applied */
 .navbar.trans {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.2);
     transition: background-color 0.5s ease;
 }
 /* nav.link when trans applied to navbar */

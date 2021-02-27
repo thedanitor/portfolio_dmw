@@ -1,11 +1,8 @@
 #backgroundImg {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  background-color: black;
+  /* background-color: black; */
   width: 100%;
   height: 100vh;
   max-height: 100vh;
@@ -13,10 +10,13 @@
   z-index: -1;
 }
 
-#danPhotoLarge {
+#bgOverlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100%;
   width: 100%;
-  border-radius: 50%;
+  background-color: rgba(52, 58, 64, 0.5);
 }
 
 #photoCon {
@@ -33,11 +33,3 @@
   transform: translateX(-100%) translateY(-100%) scale(0.25) rotate(-2turn);
   visibility: hidden;
 }
-
-/* #textStack {
-  display: flex;
-  color: yellow;
-  align-items: flex-start;
-  flex-direction: column;
-  justify-content: center;
-} */

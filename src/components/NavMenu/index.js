@@ -6,36 +6,37 @@ import "./style.css";
 
 export default function NavMenu() {
   const [brandClass, setBrandClass] = useState("");
-  const [navClass, setNavClass] = useState("");
+  const [navClass, setNavClass] = useState("trans");
 
   const handleScroll = () => {
+    // number of pixels currently scrolled along vertical axis
     let scrollHeight = window.pageYOffset;
+    // if more than 10% of window height is scrolled
     if (scrollHeight > window.innerHeight * 0.1) {
+      // apply specified states (classes)
       setBrandClass("show");
       setNavClass("opaque");
+      //otherwise apply default classes
     } else {
       setBrandClass("");
       setNavClass("trans");
     }
   };
 
+  // when DOM loads listen for scroll events to call handleScroll
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
   });
 
   return (
     <div>
-      <Navbar
-        fixed="top"
-        // bg={navBg} variant={navText}
-        className={navClass}
-      >
+      <Navbar fixed="top" className={navClass}>
         <Navbar.Brand href="#Home">
           <img
             id="danPhoto"
             src={DanPhoto}
             alt="Dan Weikart"
-            class={brandClass}
+            className={brandClass}
           />
         </Navbar.Brand>
         <Nav className="mr-auto">

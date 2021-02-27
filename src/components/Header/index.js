@@ -10,9 +10,13 @@ export default function Header() {
   const [photoConClass, setPhotoConClass] = useState("");
 
   const handleScroll = () => {
+    // number of pixels currently scrolled along vertical axis
     let scrollHeight = window.pageYOffset;
+    // if more than 10% of window height is scrolled
     if (scrollHeight > window.innerHeight * 0.1) {
+      // apply "hidden" state (class)
       setPhotoConClass("hidden");
+      // otherwise no class applied
     } else {
       setPhotoConClass("");
     }
@@ -24,6 +28,7 @@ export default function Header() {
 
   return (
     <div id="backgroundImg">
+      <div id="bgOverlay">
       <Container>
         <Row>
           <Col></Col>
@@ -33,6 +38,7 @@ export default function Header() {
           <HeaderTextStack />
         </Row>
       </Container>
+      </div>
     </div>
   );
 }
