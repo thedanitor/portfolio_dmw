@@ -1,18 +1,17 @@
 #textStack {
   display: flex;
-  color: yellow;
+  color: #03A062;
   align-items: flex-start;
   flex-direction: column;
   justify-content: center;
-  
 }
 
-.stacking {
+#textStack h2 {
   transform: translateY(-100vh);
-  transition: 0.3s ease-out;
+  transition: 0.2s ease-out;
 }
 
-.stacking.loaded {
+#textStack h2.loaded {
   transform: translateY(0);
   
 }
