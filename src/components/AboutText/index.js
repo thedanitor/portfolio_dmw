@@ -42,8 +42,8 @@ export default function AboutText() {
         <Col xs={8} className="aboutText">
           <p>
             When I am not coding I am hopefully biking, hiking, camping,
-            reading, or playing music. Please browse my work and feel free to
-            contact me for anything.
+            reading, or playing music. Feel free browse my work below and don't
+            hesitate to contact me.
           </p>
         </Col>
         <Col></Col>
