@@ -1,9 +1,18 @@
+.top {
+    margin-top: 20px;
+}
+
 .aboutText {
     text-align: left;
     color: #03A062;
+    font-size: 1.25rem;
 }
 
 .container {
     padding-top: 140px;
     padding-bottom: 50px;
+}
+
+.aboutCon {
+    position: relative;
 }

@@ -4,17 +4,15 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import AboutHeader from "../AboutHeader";
+// import DownArrow from "../DownArrow";
 
 export default function AboutText() {
-
-
-
   return (
-    <Container>
+    <Container className="aboutCon">
       <AboutHeader />
       <Row>
         <Col></Col>
-        <Col xs={6} md={8} className="aboutText">
+        <Col xs={8} className="aboutText top">
           <p>
             Chemist turned web developer has the formula to synthesize
             analytical experience and problem-solving abilities with creative
@@ -28,7 +26,7 @@ export default function AboutText() {
       </Row>
       <Row>
         <Col></Col>
-        <Col xs={6} md={8} className="aboutText">
+        <Col xs={8} className="aboutText">
           <p>
             As a recent graduate of University of Washington's coding bootcamp
             for full-stack web development I have learned so much in the past
@@ -41,14 +39,16 @@ export default function AboutText() {
       </Row>
       <Row>
         <Col></Col>
-        <Col xs={6} md={8} className="aboutText">
+        <Col xs={8} className="aboutText">
           <p>
             When I am not coding I am hopefully biking, hiking, camping,
-            reading, or playing music.
+            reading, or playing music. Please browse my work and feel free to
+            contact me for anything.
           </p>
         </Col>
         <Col></Col>
       </Row>
+      {/* <DownArrow /> */}
     </Container>
   );
 }
