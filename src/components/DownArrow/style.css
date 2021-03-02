@@ -1,0 +1,25 @@
+.arrowRow {
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    /* transform: translateX(-25%); */
+}
+
+.icon {
+    font-size: 3em;
+    color: #03A062;
+
+    animation: blink 2s ease-in infinite;
+}
+
+.icon:hover {
+    transform: rotate(360deg);
+    transition: transform 1s;
+    animation: none;
+}
+
+@keyframes blink {
+    from, to { color: #03A062 }
+    50% { color: #005c37 }
+  }

@@ -12,7 +12,7 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 1000);
+    setTimeout(() => setLoading(false), 100);
   }, []);
 
   return (
@@ -26,7 +26,9 @@ function App() {
           <Skills />
         </div>
       ) : (
-        <Loading />
+        <div className="App">
+          <Loading />
+        </div>
       )}
     </>
   );

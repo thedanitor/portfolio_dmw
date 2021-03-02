@@ -45,7 +45,7 @@ export default function NavMenu() {
           <Nav.Link href="#Skills">Skills</Nav.Link>
         </Nav>
         <Nav className="ml-auto">
-          <Nav.Link href="">Dan Weikart</Nav.Link>
+          <Nav.Link href="#Home">Dan Weikart</Nav.Link>
           <Nav.Link href="">Contact</Nav.Link>
         </Nav>
       </Navbar>

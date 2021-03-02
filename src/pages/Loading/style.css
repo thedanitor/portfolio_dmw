@@ -1,6 +1,6 @@
-.loadBg {
+#loadBackground {
     /* height: 100vh; */
-    width: 100%;
+    /* width: 100%;
     background-color: #000;
     display: flex;
     justify-content: center;
@@ -8,8 +8,42 @@
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
-    max-height: 100vh;
+    max-height: 100vh; */
     /* z-index: -1; */
 }
+
+/* .spinCol {
+    z-index: 1;
+  max-height: 100%;
+  max-width: 100%;
+} */
+
+#bgOverlay {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* height: 100%; */
+    /* width: 100%; */
+    /* background-color: rgba(52, 58, 64, 0.5); */
+   /* min-height: 1000px;
+  max-height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 500px */
+  }
+
+#spinners {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+    width: 100%;
+    background-color: rgba(52, 58, 64, 0.5);
+    background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  /* padding: 500px; */
+  }

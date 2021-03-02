@@ -5,6 +5,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import HeaderPhoto from "../HeaderPhoto";
 import HeaderTextStack from "../HeaderTextStack";
+import DownArrow from "../DownArrow";
 
 export default function Header() {
   const [photoConClass, setPhotoConClass] = useState("");
@@ -29,15 +30,16 @@ export default function Header() {
   return (
     <div id="backgroundImg">
       <div id="bgOverlay">
-      <Container>
-        <Row>
-          <Col></Col>
-          <Col id="photoCon" className={photoConClass} xs={6}>
-            <HeaderPhoto />
-          </Col>
-          <HeaderTextStack />
-        </Row>
-      </Container>
+        <Container>
+          <Row>
+            <Col></Col>
+            <Col id="photoCon" className={photoConClass} xs={6}>
+              <HeaderPhoto />
+            </Col>
+            <HeaderTextStack />
+          </Row>
+          <DownArrow />
+        </Container>
       </div>
     </div>
   );
