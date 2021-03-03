@@ -12,30 +12,38 @@ export default function ProjectCard({
   webUrl,
   githubUrl,
 }) {
-  const [clicked, setClicked] = useState(false);
-  const handleClick = () => {
-    clicked ? setClicked(false) : setClicked(true);
+  const [hover, setHover] = useState(false);
+  const handleHover = () => {
+    hover ? setHover(false) : setHover(true);
   };
 
   return (
     <>
-      {clicked === false ? (
+      {hover === false ? (
         <Card className="smCard">
-          <Card.Img variant="top" src={image} 
-          onClick={handleClick} 
-          />
+          <Card.Img variant="top" src={image} onMouseEnter={handleHover} />
         </Card>
       ) : (
-        <Card className="lgCard">
-          <Card.Img variant="top" src={image} onClick={handleClick}/>
+        <Card className="lgCard" onMouseLeave={handleHover}>
+          <Card.Img variant="top" src={image} />
           <Card.Body>
             <Card.Title>{name}</Card.Title>
             <Card.Text>{description}</Card.Text>
             <Card.Text>{tech}</Card.Text>
-            <Button variant="primary" href={githubUrl}>
+            <Button
+              variant="primary"
+              href={githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               View Repository
             </Button>
-            <Button variant="primary" href={webUrl}>
+            <Button
+              variant="primary"
+              href={webUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               View Website
             </Button>
           </Card.Body>

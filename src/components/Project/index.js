@@ -1,35 +1,18 @@
-import React, { useState } from "react";
+import React from "react";
 import "./style.css";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-// import Image from "react-bootstrap/Image";
 import portfolioList from "../../utils/portfolioList";
 import ProjectCard from "../ProjectCard";
 
 export default function Project() {
-//   const [clicked, setClicked] = useState(false);
-//   const [med, setMed] = useState(6);
-//   const [large, setLarge] = useState(4);
-
-//   const handleClick = () => {
-//       console.log("med" + med + "large" + large);
-//     clicked ? setClicked(false) : setClicked(true);
-//     med === 6 ? setMed(9) : setMed(6);
-//     large === 4 ? setLarge(6) : setLarge(4);
-//   };
-
-
   return (
     <Container>
       <Row>
         {portfolioList.map((proj, index) => (
-          <Col 
-        //   xs="auto" 
-        //   onClick={handleClick}
-          key={index}>
+          <Col xs={12} md={6} lg={4} key={index}>
             <ProjectCard
-                
               name={proj.name}
               image={proj.image}
               imageLarge={proj.imageLarge}
