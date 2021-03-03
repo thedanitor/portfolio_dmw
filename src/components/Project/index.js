@@ -22,6 +22,7 @@ export default function Project() {
               githubUrl={proj.githubUrl}
               transition={proj.transition}
               key={index}
+              id={proj.id}
             />
           </Col>
         ))}

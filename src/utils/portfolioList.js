@@ -23,6 +23,7 @@ function ProjectData(
   webUrl,
   githubUrl,
   transition,
+  id
 ) {
   this.name = name;
   this.image = image;
@@ -32,6 +33,7 @@ function ProjectData(
   this.webUrl = webUrl;
   this.githubUrl = githubUrl;
   this.transition = transition;
+  this.id = id;
 }
 
 const lernProject = new ProjectData(
@@ -43,6 +45,7 @@ const lernProject = new ProjectData(
   "https://lern-demo.herokuapp.com/",
   "https://github.com/jaredhennessy/LERN",
   "0ms",
+  "#lern"
 );
 
 const aqirProject = new ProjectData(
@@ -54,6 +57,7 @@ const aqirProject = new ProjectData(
   "https://thawing-castle-93200.herokuapp.com/",
   "https://github.com/ngoudeau2012/project_aqir",
   "100ms",
+  "#aqir"
 );
 
 const burgerProject = new ProjectData(
@@ -65,6 +69,7 @@ const burgerProject = new ProjectData(
   "https://dansburgers.herokuapp.com/",
   "https://github.com/thedanitor/burger",
   "200ms",
+  "#addaBurger"
 );
 
 const employeeRosterProject = new ProjectData(
@@ -76,6 +81,7 @@ const employeeRosterProject = new ProjectData(
   "",
   "https://github.com/thedanitor/Employee_Roster",
   "300ms",
+  "#employeeRoster"
 );
 
 const fearSetterProject = new ProjectData(
@@ -87,6 +93,7 @@ const fearSetterProject = new ProjectData(
   "https://thedanitor.github.io/Project-1_Fear-Setter/",
   "https://github.com/thedanitor/Project-1_Fear-Setter",
   "400ms",
+  "#fearSetter"
 );
 
 const weatherProject = new ProjectData(
@@ -98,6 +105,7 @@ const weatherProject = new ProjectData(
   "https://thedanitor.github.io/Weather_Dashboard/",
   "https://github.com/thedanitor/Weather_Dashboard",
   "500ms",
+  "#weatherDashboard"
 );
 
 const dayPlannerProject = new ProjectData(
@@ -109,6 +117,7 @@ const dayPlannerProject = new ProjectData(
   "https://thedanitor.github.io/Work_Day_Scheduler/",
   "https://github.com/thedanitor/Work_Day_Scheduler",
   "600ms",
+  "#dayPlanner"
 
 );
 

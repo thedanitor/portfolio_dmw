@@ -11,6 +11,7 @@ export default function ProjectCard({
   description,
   webUrl,
   githubUrl,
+  id,
 }) {
   const [hover, setHover] = useState(false);
   const handleHover = () => {
@@ -28,9 +29,17 @@ export default function ProjectCard({
           <Card.Img variant="top" src={image} />
           <Card.Body>
             <Card.Title>{name}</Card.Title>
-            <Card.Text>{description}</Card.Text>
+            {/* <Card.Text>{description}</Card.Text> */}
             <Card.Text>{tech}</Card.Text>
             <Button
+              variant="primary"
+              
+              // target="_blank"
+              // rel="noopener noreferrer"
+            >
+              <a href={id}>View Details</a>
+            </Button>
+            {/* <Button
               variant="primary"
               href={githubUrl}
               target="_blank"
@@ -45,7 +54,7 @@ export default function ProjectCard({
               rel="noopener noreferrer"
             >
               View Website
-            </Button>
+            </Button> */}
           </Card.Body>
         </Card>
       )}
