@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./style.css";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 
@@ -19,11 +20,13 @@ export default function ProjectCard({
   return (
     <>
       {clicked === false ? (
-        <Card>
-          <Card.Img variant="top" src={image} onClick={handleClick} />
+        <Card className="smCard">
+          <Card.Img variant="top" src={image} 
+          onClick={handleClick} 
+          />
         </Card>
       ) : (
-        <Card>
+        <Card className="lgCard">
           <Card.Img variant="top" src={image} onClick={handleClick}/>
           <Card.Body>
             <Card.Title>{name}</Card.Title>
