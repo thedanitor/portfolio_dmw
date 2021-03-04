@@ -1,5 +1,10 @@
 #About {
-  /* min-height: 100%; */
-  /* background-color: black; */
-  /* position: relative; */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
+    /* max-height: 100vh; */
+    background-image: url("../../assets/images/space.jpg");
+    z-index: -100;
 }

@@ -42,7 +42,7 @@ const lernProject = new ProjectData(
   lernWide,
   "HTML / CSS / JavaScript / MongoDB / Node / Express / React / Material-UI",
   "LERN is an open source education platform for taking and teaching online courses.",
-  "https://lern-demo.herokuapp.com/",
+  "https://lern-a.herokuapp.com/",
   "https://github.com/jaredhennessy/LERN",
   "0ms",
   "#lern"
