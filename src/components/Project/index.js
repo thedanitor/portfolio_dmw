@@ -11,8 +11,9 @@ export default function Project() {
     <Container>
       <Row>
         {portfolioList.map((proj, index) => (
-          <Col xs={12} md={6} lg={4} key={index}>
+          <Col className="cardCol" xs={12} md={6} xl={4} key={index}>
             <ProjectCard
+              className="projectCard"
               name={proj.name}
               image={proj.image}
               imageLarge={proj.imageLarge}

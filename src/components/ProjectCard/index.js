@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./style.css";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
+import ProjectModal from "../ProjectModal";
 
 export default function ProjectCard({
   name,
@@ -14,6 +15,17 @@ export default function ProjectCard({
   id,
 }) {
   const [hover, setHover] = useState(false);
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => {
+    setShow(false);
+    setTimeout(() => {
+      setHover(false);
+    }, 100);
+  }
+  const handleShow = () => {
+    setShow(true);
+  }
   const handleHover = () => {
     hover ? setHover(false) : setHover(true);
   };
@@ -21,41 +33,36 @@ export default function ProjectCard({
   return (
     <>
       {hover === false ? (
-        <Card className="smCard">
+        <Card className="projImg">
           <Card.Img variant="top" src={image} onMouseEnter={handleHover} />
         </Card>
       ) : (
-        <Card className="lgCard" onMouseLeave={handleHover}>
+        <Card className="projCard" onMouseLeave={handleHover}>
           <Card.Img variant="top" src={image} />
           <Card.Body>
             <Card.Title>{name}</Card.Title>
             {/* <Card.Text>{description}</Card.Text> */}
-            <Card.Text>{tech}</Card.Text>
+            {/* <Card.Text>{tech}</Card.Text> */}
             <Button
               variant="primary"
-              
-              // target="_blank"
-              // rel="noopener noreferrer"
+              onClick={handleShow}
             >
-              <a href={id}>View Details</a>
+              View Details
             </Button>
-            {/* <Button
-              variant="primary"
-              href={githubUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              View Repository
-            </Button>
-            <Button
-              variant="primary"
-              href={webUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              View Website
-            </Button> */}
           </Card.Body>
+          <ProjectModal
+          // setHover={setHover}
+            handleClose={handleClose}
+            handleShow={handleShow}
+            show={show}
+            name={name}
+            imageLarge={imageLarge}
+            tech={tech}
+            description={description}
+            webUrl={webUrl}
+            githubUrl={githubUrl}
+            id={id}
+          />
         </Card>
       )}
     </>
