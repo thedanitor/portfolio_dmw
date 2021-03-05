@@ -1,14 +1,32 @@
 .projImg {
   width: 100%;
-  opacity: 0.75
+  opacity: 0.7;
 }
 
 .projCard {
-  /* width: 125%;
-  z-index: 10;
-  position: absolute;
-  top: -10%;
-  left: -12.5%; */
   opacity: 1;
   width: 100%;
+  cursor: pointer;
 }
+
+.cardBody {
+  position: relative;
+  padding: 0;
+}
+
+.cardTitle {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  z-index: 10;
+  transform: translateX(-50%);
+}
+
+.cardText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+

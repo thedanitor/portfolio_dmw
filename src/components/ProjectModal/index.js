@@ -18,7 +18,7 @@ export default function ProjectModal({
 }) {
     return (
         <Modal className="projModal" onHide={handleClose} show={show}>
-        <Modal.Header closeButton>
+        <Modal.Header closeButton onClick={handleClose}>
           <Modal.Title>{name}</Modal.Title>
         </Modal.Header>
         <Card >
