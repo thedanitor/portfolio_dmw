@@ -1,3 +1,7 @@
-/* .projModal {
-    width: 10%;
+.projModal {
+    border-radius: 50px !important;
+}
+
+/* .modalCard {
+    border-radius: 0px;
 } */
