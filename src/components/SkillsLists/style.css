@@ -1,0 +1,23 @@
+.skillsListHeading {
+    background-color: #03A062;
+}
+
+.skillsListItem {
+
+}
+
+.showText {
+    display: inline-block;
+}
+
+.hideText {
+    display: none;
+}
+
+.showIcon {
+    display: inline-block;
+}
+
+.hideIcon {
+    display: none;
+}
