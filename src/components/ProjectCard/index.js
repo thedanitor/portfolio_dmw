@@ -37,7 +37,7 @@ export default function ProjectCard({
     <>
       {hover === false ? (
         <Card className="projImg">
-          <Card.Img variant="top" src={image} onMouseEnter={handleHover} />
+          <Card.Img variant="top" className="cardImg" src={image} onMouseEnter={handleHover} />
         </Card>
       ) : (
         <Card
