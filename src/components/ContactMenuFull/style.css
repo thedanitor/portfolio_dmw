@@ -1,0 +1,17 @@
+/* .contactFull {
+    display: flex;
+    flex-direction: column;
+} */
+
+.linkItems {
+    display: inline-block;
+    margin: 10px;
+    text-align: left;
+}
+
+.labelText {
+    display: inline-block;
+    margin: 10px;
+    top: auto;
+    bottom: auto;
+}

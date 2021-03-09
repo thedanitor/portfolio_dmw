@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
+import Contact from "./components/Contact";
 import Loading from "./pages/Loading";
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <About />
           <Projects />
           <Skills />
+          <Contact />
         </div>
       ) : (
         <div className="App">

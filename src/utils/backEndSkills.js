@@ -1,4 +1,4 @@
-import { faNodeJs,  faFontAwesome } from "@fortawesome/free-brands-svg-icons";
+import { faNodeJs, faNode, faFontAwesome } from "@fortawesome/free-brands-svg-icons";
 
 function BackEndSkills(skill, skillIcon, iconColor) {
     this.skill = skill;
@@ -6,8 +6,8 @@ function BackEndSkills(skill, skillIcon, iconColor) {
     this.iconColor = iconColor
 }
 
-const node = new BackEndSkills("Node", faNodeJs, "blue");
-const express = new BackEndSkills("Express", faFontAwesome, "blue");
+const node = new BackEndSkills("Node", faNode, "blue");
+const express = new BackEndSkills("Express", faNodeJs, "blue");
 const mySql = new BackEndSkills("MySQL", faFontAwesome, "blue");
 const sequelize = new BackEndSkills("Sequelize", faFontAwesome, "blue");
 const mongoDb = new BackEndSkills("MongoDB", faFontAwesome, "blue");
