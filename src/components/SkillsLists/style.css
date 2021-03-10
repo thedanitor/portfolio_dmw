@@ -16,9 +16,14 @@
     font-weight: bold;
 }
 
+.skillsListHeading:hover .listHeaderText {
+    display: inline-block;
+    transform: rotateY(360deg);
+    transition: transform 0.5s;
+}
+
 .skillsListItem {
     background-color: rgba(52, 58, 64, 0.9);
-    /* color: #03a062; */
 }
 
 .skillsListItem:hover {

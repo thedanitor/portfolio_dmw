@@ -15,7 +15,7 @@ export default function SkillsLists() {
       <Col className="top" xs={9} sm={6} md={4}>
         <ListGroup className="skillsLists">
           <ListGroup.Item className="skillsListHeading">
-            Client Side
+            <span className="listHeaderText">Client Side</span>
           </ListGroup.Item>
           {frontEndSkills.map((skill, index) => (
             <FrontEndSkillsList
@@ -31,7 +31,7 @@ export default function SkillsLists() {
       <Col className="top" xs={9} sm={6} md={4}>
         <ListGroup>
           <ListGroup.Item className="skillsListHeading">
-            Server Side
+          <span className="listHeaderText">Server Side</span>
           </ListGroup.Item>
           {backEndSkills.map((skill, index) => (
             <BackEndSkillsList
@@ -46,7 +46,9 @@ export default function SkillsLists() {
       </Col>
       <Col className="top" xs={9} sm={6} md={4}>
         <ListGroup>
-          <ListGroup.Item className="skillsListHeading">Related</ListGroup.Item>
+          <ListGroup.Item className="skillsListHeading">
+          <span className="listHeaderText">Related</span>
+            </ListGroup.Item>
           {relatedSkills.map((skill, index) => (
             <RelatedSkillsList
               key={index}

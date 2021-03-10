@@ -14,16 +14,16 @@ export default function HeaderTextStack() {
   return (
     <Col id="textStack">
       <Row>
-        <h2 className={loaded} style={{transitionDelay: "0.2s"}}>Full</h2>
+        <h1 className={loaded} style={{transitionDelay: "0.2s"}}>Full</h1>
       </Row>
       <Row>
-        <h2 className={loaded} style={{transitionDelay: "0.4s"}}>Stack</h2>
+        <h1 className={loaded} style={{transitionDelay: "0.4s"}}>Stack</h1>
       </Row>
       <Row>
-        <h2 className={loaded} style={{transitionDelay: "0.6s"}}>Web</h2>
+        <h1 className={loaded} style={{transitionDelay: "0.6s"}}>Web</h1>
       </Row>
       <Row>
-        <h2 className={loaded} style={{transitionDelay: "0.8s"}}>Developer</h2>
+        <h1 className={loaded} style={{transitionDelay: "0.8s"}}>Developer</h1>
       </Row>
     </Col>
   );

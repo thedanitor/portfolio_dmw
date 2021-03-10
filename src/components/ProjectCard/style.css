@@ -25,6 +25,8 @@
   right: 0;
   transform: translateY(101%);
   transition: transform 0.3s ease-in;
+  /* border-top: 5px solid #03A062; */
+  border: 5px solid #03A062;
 }
 
 .projBtn {
@@ -47,7 +49,7 @@
 
 
 .projCard:hover {
-  outline: #03A062 solid 5px;
+  /* outline: #03A062 solid 5px; */
 }
 
 .projCard:hover .cardInfo {

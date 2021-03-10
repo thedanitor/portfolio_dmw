@@ -6,12 +6,16 @@
   justify-content: center;
 }
 
-#textStack h2 {
+#textStack h1 {
   transform: translateY(-100vh);
-  transition: 0.2s ease-out;
+  transition: transform 0.2s ease-out;
 }
 
-#textStack h2.loaded {
+#textStack h1:hover {
+  color: #fff;
+}
+
+#textStack h1.loaded {
   transform: translateY(0);
   
 }
