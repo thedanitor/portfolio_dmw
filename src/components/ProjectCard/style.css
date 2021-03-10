@@ -28,8 +28,23 @@
 }
 
 .projBtn {
-  /* background-color: #03A062; */
+  background-color: #03A062;
+  border: #fff;
+  color: #fff;
+  border-radius: 0;
+  margin: 5px 10px;
 }
+
+.projBtn:hover {  
+  background-color: #00da84;
+}
+
+.projBtn:focus {
+  background-color: #07ff9d;
+  outline: 2px solid #03A062    ;      
+  box-shadow: none;
+}
+
 
 .projCard:hover {
   outline: #03A062 solid 5px;
