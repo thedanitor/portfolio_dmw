@@ -12,15 +12,15 @@ export default function FrontEndSkillsList({ skill, skillIcon, iconColor }) {
 
   return (
     <>
-      {hover === false ? (
+     {/* {hover === false ? ( */}
         <ListGroup.Item className="skillsListItem" onMouseEnter={handleHover}>
           {skill}
         </ListGroup.Item>
-      ) : (
+      {/* ) : (
         <ListGroup.Item className="skillsListItem" onMouseLeave={handleHover}>
           <FontAwesomeIcon icon={skillIcon} style={{ color: iconColor }} />
         </ListGroup.Item>
-      )}
+      )} */}
     </>
   );
 }

@@ -1,17 +1,10 @@
-.projImg {
-  width: 100%;
-  opacity: 0.7;
-  border-radius: 0;
-  border: none;
-}
-
 .projCard {
   opacity: 1;
   width: 100%;
-  cursor: pointer;
   border-radius: 0;
   border: none;
-  outline: #03A062 solid 5px;
+  position: relative;
+  overflow: hidden;
 }
 
 .cardImg {
@@ -23,23 +16,25 @@
   padding: 0;
 }
 
-.cardTitle {
+.cardInfo {
+  color: #FFF;
+  background-color: rgba(52, 58, 64, 0.9);
   position: absolute;
-  top: 30%;
-  left: 50%;
-  z-index: 10;
-  transform: translateX(-50%);
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transform: translateY(101%);
+  transition: transform 0.3s ease-in;
 }
 
-.cardText {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 10;
+.projBtn {
+  /* background-color: #03A062; */
 }
 
-.projModalEl {
-  border-radius: 0;
+.projCard:hover {
+  outline: #03A062 solid 5px;
 }
 
+.projCard:hover .cardInfo {
+  transform: translateY(0);
+}

@@ -9,10 +9,10 @@ import ProjectCard from "../ProjectCard";
 
 export default function Project() {
   return (
-    <Container>
+    <Container className="projContainer">
       <Row>
         {portfolioList.map((proj, index) => (
-          <Col className="cardCol" xs={12} md={6} xl={4} key={index}>
+          <Col className="cardCol" xs={12} md={6}  key={index}>
             <Card className="cardBg">
             <ProjectCard
               className="projectCard"

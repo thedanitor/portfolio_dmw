@@ -23,6 +23,7 @@ export default function SkillsLists() {
               skill={skill.skill}
               skillIcon={skill.skillIcon}
               iconColor={skill.iconColor}
+              fa={skill.fa}
             />
           ))}
         </ListGroup>
@@ -38,6 +39,7 @@ export default function SkillsLists() {
               skill={skill.skill}
               skillIcon={skill.skillIcon}
               iconColor={skill.iconColor}
+              fa={skill.fa}
             />
           ))}
         </ListGroup>
