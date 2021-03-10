@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./style.css";
 import ListGroup from "react-bootstrap/ListGroup";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function FrontEndSkillsList({ skill, skillIcon, iconColor }) {
   const [hover, setHover] = useState(false);

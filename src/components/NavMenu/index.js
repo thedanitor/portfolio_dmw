@@ -31,6 +31,18 @@ export default function NavMenu() {
   return (
     <div>
       <Navbar fixed="top" className={navClass}>
+        <Nav className="mr-auto">
+          <Nav.Link href="#About">About</Nav.Link>
+          <Nav.Link href="#Projects">Projects</Nav.Link>
+          <Nav.Link href="#Skills">Skills</Nav.Link>
+        </Nav>
+        <Nav className="ml-auto">
+
+          <Nav.Link href="#Contact">Contact</Nav.Link>
+        </Nav>
+
+        <Nav.Link href="#Home" id="#danText" className={brandClass}>Dan Weikart</Nav.Link>
+
         <Navbar.Brand href="#Home">
           <img
             id="danPhoto"
@@ -39,15 +51,6 @@ export default function NavMenu() {
             className={brandClass}
           />
         </Navbar.Brand>
-        <Nav className="mr-auto">
-          <Nav.Link href="#About">About</Nav.Link>
-          <Nav.Link href="#Projects">Projects</Nav.Link>
-          <Nav.Link href="#Skills">Skills</Nav.Link>
-        </Nav>
-        <Nav className="ml-auto">
-          <Nav.Link href="#Home">Dan Weikart</Nav.Link>
-          <Nav.Link href="#Contact">Contact</Nav.Link>
-        </Nav>
       </Navbar>
     </div>
   );

@@ -4,6 +4,7 @@
 } */
 
 .linkItems {
+    color: rgba(52, 58, 64, 0.9) !important;
     display: inline-block;
     margin: 10px;
     text-align: left;

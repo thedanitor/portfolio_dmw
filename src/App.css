@@ -2,9 +2,18 @@
   text-align: center;
   scroll-behavior: smooth;
   background-color: black;
+  color: #fff;
 }
 
-.App-logo {
+h1 {
+  cursor: default;
+}
+
+.sectionHeader:hover {
+  color: #03a062;
+}
+
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -37,4 +46,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */

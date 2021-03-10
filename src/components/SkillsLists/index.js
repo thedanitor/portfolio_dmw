@@ -12,8 +12,8 @@ import RelatedSkillsList from "../../components/RelatedSkillsList";
 export default function SkillsLists() {
   return (
     <>
-      <Col xs={9} sm={6} md={4}>
-        <ListGroup>
+      <Col className="top" xs={9} sm={6} md={4}>
+        <ListGroup className="skillsLists">
           <ListGroup.Item className="skillsListHeading">
             Client Side
           </ListGroup.Item>
@@ -28,7 +28,7 @@ export default function SkillsLists() {
           ))}
         </ListGroup>
       </Col>
-      <Col xs={9} sm={6} md={4}>
+      <Col className="top" xs={9} sm={6} md={4}>
         <ListGroup>
           <ListGroup.Item className="skillsListHeading">
             Server Side
@@ -44,7 +44,7 @@ export default function SkillsLists() {
           ))}
         </ListGroup>
       </Col>
-      <Col xs={9} sm={6} md={4}>
+      <Col className="top" xs={9} sm={6} md={4}>
         <ListGroup>
           <ListGroup.Item className="skillsListHeading">Related</ListGroup.Item>
           {relatedSkills.map((skill, index) => (

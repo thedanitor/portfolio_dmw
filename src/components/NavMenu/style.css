@@ -16,17 +16,32 @@
 
 /* navbar when opaque applied */
 .navbar.opaque {
-    background-color: rgba(52, 58, 64, 0.9);
-    transition: background-color 0.5s ease;
+    background-color: rgba(52, 58, 64, 0.7);
+    /* transition: background-color 0.5s ease; */
 }
 /* navbar when trans applied */
 .navbar.trans {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: transparent;
     transition: background-color 0.5s ease;
 }
-/* nav.link when trans applied to navbar */
-.navbar.trans .nav-link {
+/* nav.link */
+.nav-link {
     color: #03A062 !important;
     font-weight: bold;
     /* transition: color 1s ease, font-weight 1s; */
+}
+
+/* danText  */
+#danText {
+    display: block;
+    transform: scale(1);
+    visibility: hidden;
+    transition: transform 0.5s ease, scale 0.5s ease, visibility 0.5s ease;
+}
+
+/* danText when show class active */
+#danText.show {
+    display: none;
+    visibility: hidden;
+    transform: scale(0);
 }

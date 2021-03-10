@@ -3,13 +3,19 @@ import "./style.css";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import AboutHeader from "../AboutHeader";
-// import DownArrow from "../DownArrow";
 
 export default function AboutText() {
   return (
     <Container className="aboutCon">
-      <AboutHeader />
+      <h1>
+        <span className="sectionHeader">Hello </span>
+        <span className="sectionHeader">World</span>
+        <span className="sectionHeader">.</span>
+        <span className="sectionHeader">.</span>
+        <span className="sectionHeader">. </span>
+        <span className="sectionHeader">I'm </span>
+        <span className="sectionHeader">Dan</span>
+      </h1>
       <Row>
         <Col></Col>
         <Col xs={8} className="aboutText top">

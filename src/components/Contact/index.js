@@ -23,10 +23,10 @@ export default function Contact() {
           id="Contact"
           className="full justify-content-center flex-column"
           fixed="bottom"
-          onClick={toggleContactFull}
+          // onClick={toggleContactFull}
         >
           <FontAwesomeIcon
-            className="icon"
+            className="iconClose"
             icon={faTimesCircle}
             onClick={toggleContactFull}
           />

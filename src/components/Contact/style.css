@@ -10,6 +10,10 @@
 
 /* nav full page */
 .full {
-    height: calc(100vh - 106px);
+    height: 100vh;
     background-color: #03A062;
+}
+
+.iconClose {
+    color:rgba(52, 58, 64, 0.9);
 }

@@ -11,11 +11,14 @@ export default function Skills() {
       <Container>
         <Row>
           <Col>
-            <h1>Technical Skills</h1>
+            <h1>
+              <span className="sectionHeader">Technical </span>
+              <span className="sectionHeader">Skills</span>
+            </h1>
           </Col>
         </Row>
         <Row>
-          <SkillsLists />
+          <SkillsLists/>
         </Row>
       </Container>
     </div>

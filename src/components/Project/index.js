@@ -10,23 +10,31 @@ import ProjectCard from "../ProjectCard";
 export default function Project() {
   return (
     <Container className="projContainer">
+      <h1>
+        <span className="sectionHeader">Here </span>
+        <span className="sectionHeader">are </span>
+        <span className="sectionHeader">some </span>
+        <span className="sectionHeader">of </span>
+        <span className="sectionHeader">my </span>
+        <span className="sectionHeader">projects </span>
+      </h1>
       <Row>
         {portfolioList.map((proj, index) => (
-          <Col className="cardCol" xs={12} md={6}  key={index}>
+          <Col className="cardCol" xs={12} md={6} key={index}>
             <Card className="cardBg">
-            <ProjectCard
-              className="projectCard"
-              name={proj.name}
-              image={proj.image}
-              imageLarge={proj.imageLarge}
-              tech={proj.tech}
-              description={proj.description}
-              webUrl={proj.webUrl}
-              githubUrl={proj.githubUrl}
-              transition={proj.transition}
-              key={index}
-              id={proj.id}
-            />
+              <ProjectCard
+                className="projectCard"
+                name={proj.name}
+                image={proj.image}
+                imageLarge={proj.imageLarge}
+                tech={proj.tech}
+                description={proj.description}
+                webUrl={proj.webUrl}
+                githubUrl={proj.githubUrl}
+                transition={proj.transition}
+                key={index}
+                id={proj.id}
+              />
             </Card>
           </Col>
         ))}
