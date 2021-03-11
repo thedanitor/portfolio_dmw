@@ -32,13 +32,14 @@ export default function NavMenu() {
     <div>
       <Navbar fixed="top" className={navClass}>
         <Nav className="mr-auto">
+        <Nav.Link href="#Contact">Contact</Nav.Link>
           <Nav.Link href="#About">About</Nav.Link>
           <Nav.Link href="#Projects">Projects</Nav.Link>
           <Nav.Link href="#Skills">Skills</Nav.Link>
         </Nav>
         <Nav className="ml-auto">
 
-          <Nav.Link href="#Contact">Contact</Nav.Link>
+          
         </Nav>
 
         <Nav.Link href="#Home" id="#danText" className={brandClass}>Dan Weikart</Nav.Link>

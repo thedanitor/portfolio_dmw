@@ -9,16 +9,17 @@ function RelatedSkills(skill, skillIcon, iconColor) {
 
 const github = new RelatedSkills("Github", faGithub, "blue");
 const heroku = new RelatedSkills("Heroku", faFontAwesome, "blue");
+const python = new RelatedSkills("Python", faFontAwesome, "blue");
 const gitlab = new RelatedSkills("Gitlab", faGitlab, "blue");
 const command = new RelatedSkills("Command line", faTerminal, "blue");
 const vscode = new RelatedSkills("VS Code", faFontAwesome, "blue");
 const processValidation = new RelatedSkills("Process Validation", faFontAwesome, "blue");
 const testing = new RelatedSkills("Testing", faFlask, "blue");
 const responsiveDesign = new RelatedSkills("Responsive Design", faFontAwesome, "blue");
-const pwas = new RelatedSkills("PWAs", faFontAwesome, "blue");
+// const pwas = new RelatedSkills("PWAs", faFontAwesome, "blue");
 
 
-let relatedSkills = [github, heroku, gitlab, command, vscode, processValidation, testing, responsiveDesign, pwas];
+let relatedSkills = [github, heroku, python, gitlab, command, vscode, processValidation, testing, responsiveDesign];
 
 export default relatedSkills;
 

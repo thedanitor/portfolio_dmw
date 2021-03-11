@@ -14,6 +14,10 @@
     transition: transform 0.5s ease, scale 0.5s ease, visibility 0.5s ease;
 }
 
+.navbar {
+    padding: 0 !important;
+}
+
 /* navbar when opaque applied */
 .navbar.opaque {
     background-color: rgba(52, 58, 64, 0.7);
@@ -28,7 +32,13 @@
 .nav-link {
     color: #03A062 !important;
     font-weight: bold;
+    padding: 2.5rem 1rem !important;
     /* transition: color 1s ease, font-weight 1s; */
+}
+
+.nav-link.active {
+    background-color: #03A062;
+    color: rgba(52, 58, 64, 0.7) !important;
 }
 
 /* danText  */

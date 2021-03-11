@@ -14,6 +14,7 @@ export default function ContactMenu() {
         <Nav>
           {contactInfo.map((info, index) => (
             <Nav.Link
+              className="navLinkIcon"
               href={info.href}
               key={index}
               target={info.target}
