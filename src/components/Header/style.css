@@ -2,22 +2,12 @@
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  /* background-color: black; */
   width: 100%;
   height: 100vh;
   max-height: 100vh;
   background-image: url("../../assets/images/space.jpg");
   z-index: -1;
 }
-
-/* #bgOverlay {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(52, 58, 64, 0.5);
-} */
 
 #photoCon {
   z-index: 1;
@@ -30,6 +20,6 @@
 }
 
 #photoCon.hidden {
-  transform: translateX(-100%) translateY(-100%) scale(0.25) rotate(-2turn);
+  transform: translateX(100%) translateY(-100%) scale(0.25) rotate(2turn);
   visibility: hidden;
 }
