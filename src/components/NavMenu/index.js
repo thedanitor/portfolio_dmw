@@ -41,7 +41,7 @@ export default function NavMenu() {
             className="nav-link"
             spy={true}
             smooth={true}
-            offset={-100}
+            offset={0}
             duration={500}
           >
             Contact

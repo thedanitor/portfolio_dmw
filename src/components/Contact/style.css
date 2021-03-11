@@ -15,6 +15,10 @@
     /* background-color: #00da84; */
 }
 
+.linkDown {
+    padding: 0.5rem 1rem !important;
+}
+
 .iconClose {
     font-size: 3em;
     color: rgba(52, 58, 64, 0.9);
@@ -26,7 +30,6 @@
     animation: darkBlink 2s ease-in infinite;
     
 }
-
 
 .iconClose:hover {
     transform: rotate(360deg);
