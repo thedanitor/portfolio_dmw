@@ -4,6 +4,8 @@ import Nav from "react-bootstrap/Nav";
 import DanPhoto from "../../assets/images/DanWeikart.jpg";
 import "./style.css";
 
+import { Link } from "react-scroll";
+
 export default function NavMenu() {
   const [brandClass, setBrandClass] = useState("");
   const [navClass, setNavClass] = useState("trans");
@@ -32,18 +34,59 @@ export default function NavMenu() {
     <div>
       <Navbar fixed="top" className={navClass}>
         <Nav className="mr-auto">
-        <Nav.Link href="#Contact">Contact</Nav.Link>
-          <Nav.Link href="#About">About</Nav.Link>
-          <Nav.Link href="#Projects">Projects</Nav.Link>
-          <Nav.Link href="#Skills">Skills</Nav.Link>
+          <Link
+            href="#Contact"
+            to="Contact"
+            activeClass="active"
+            className="nav-link"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+          >
+            Contact
+          </Link>
+          <Link
+            href="#About"
+            to="About"
+            activeClass="active"
+            className="nav-link"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+          >
+            About
+          </Link>
+          <Link
+            href="#Projects"
+            to="Projects"
+            activeClass="active"
+            className="nav-link"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+          >
+            Projects
+          </Link>
+          <Link
+            href="#Skills"
+            to="Skills"
+            activeClass="active"
+            className="nav-link"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+          >
+            Skills
+          </Link>
         </Nav>
-        <Nav className="ml-auto">
-
-          
-        </Nav>
-
-        <Nav.Link href="#Home" id="#danText" className={brandClass}>Dan Weikart</Nav.Link>
-
+        <Nav className="ml-auto"></Nav>
+        <Nav.Link href="#Home" id="#danText" className={brandClass}>
+          Dan Weikart
+        </Nav.Link>
         <Navbar.Brand href="#Home">
           <img
             id="danPhoto"

@@ -18,12 +18,10 @@ export default function Contact() {
 
   return (
     <>
-      {contactFull ? (
+      {contactFull === false ? (
         <Navbar
           id="Contact"
           className="full justify-content-center flex-column"
-          fixed="bottom"
-          // onClick={toggleContactFull}
         >
           <FontAwesomeIcon
             className="iconClose"
