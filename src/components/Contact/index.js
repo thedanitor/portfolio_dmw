@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 import "./style.css";
 import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-scroll";
@@ -12,26 +12,27 @@ import ContactMenu from "../ContactMenu";
 import ContactMenuFull from "../ContactMenuFull";
 
 export default function Contact({ contactFull, setContactFull }) {
-  // const [contactFull, setContactFull] = useState(true);
-
-  // const toggleContactFull = () => {
-  //   contactFull ? contactFull = false : contactFull = true;
-  // };
-
-  // const fullContact = () => {
-  //   contactFull = true;
-  //   console.log(contactFull);
-  // }
-
-  // const footerContact = () => {
-  //   contactFull = false;
-  //   console.log(contactFull);
-  // }
-
   const toggleContactFull = () => {
     contactFull ? setContactFull(false) : setContactFull(true);
-};
+  };
 
+  const handleScrollHeightFromBottom = () => {
+    // number of pixels currently scrolled along vertical axis
+    let scrollHeight = window.pageYOffset;
+
+
+    let contactElHeight = document.getElementById("Contact").offsetHeight;
+    let heightFromBottom = document.body.offsetHeight - scrollHeight;
+
+
+    if (heightFromBottom > contactElHeight && heightFromBottom > 2.2 * window.innerHeight) {
+      setContactFull(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("mousemove", handleScrollHeightFromBottom);
+  });
 
   return (
     <>
@@ -63,12 +64,12 @@ export default function Contact({ contactFull, setContactFull }) {
             duration={500}
           >
             <FontAwesomeIcon
-            className="icon contact"
-            icon={faChevronCircleDown}
-            onClick={toggleContactFull}
-          />
+              className="icon contact"
+              icon={faChevronCircleDown}
+              onClick={toggleContactFull}
+            />
           </Link>
-          
+
           <ContactMenu />
         </Navbar>
       )}

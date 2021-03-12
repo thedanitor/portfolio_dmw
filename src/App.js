@@ -17,10 +17,6 @@ function App() {
     setTimeout(() => setLoading(false), 100);
   }, []);
 
-//  const toggleContactFull = () => {
-//      contactFull ? setContactFull(false) : setContactFull(true);
-//  };
-
   return (
     <>
       {loading === false ? (

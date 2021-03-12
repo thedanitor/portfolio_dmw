@@ -6,7 +6,7 @@ import "./style.css";
 
 import { Link } from "react-scroll";
 
-export default function NavMenu({ contactFull, setContactFull }) {
+export default function NavMenu({ setContactFull }) {
   const [brandClass, setBrandClass] = useState("");
   const [navClass, setNavClass] = useState("trans");
 
