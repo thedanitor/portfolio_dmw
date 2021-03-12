@@ -18,6 +18,10 @@
     padding: 0 !important;
 }
 
+.navbar-brand {
+    padding-left: 16px;
+}
+
 /* navbar when opaque applied */
 .navbar.opaque {
     background-color: rgba(52, 58, 64, 0.7);
@@ -34,7 +38,42 @@
     font-weight: bold;
     padding: 2.5rem 1rem !important;
     /* transition: color 1s ease, font-weight 1s; */
+    
 }
+.linkHolder {
+    overflow: hidden;
+    display: inline-block;
+	/* padding: 0 4px; */
+	/* height: 1em; */
+}
+
+.linkHolder span{
+    position: relative;
+	display: inline-block;
+	-webkit-transition: -webkit-transform 0.3s;
+	-moz-transition: -moz-transform 0.3s;
+	transition: transform 0.3s;
+    /* overflow: hidden; */
+}
+
+.linkHolder span::before {
+    position: absolute;
+    /* display: none; */
+	top: -100%;
+	content: attr(data-hover);
+	/* font-weight: 700; */
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+.linkHolder:hover span,
+.linkHolder:focus span{
+	-webkit-transform: translateY(100%);
+	-moz-transform: translateY(100%);
+	transform: translateY(100%);
+}
+
 
 .nav-link.active {
     background-color: #03A062;

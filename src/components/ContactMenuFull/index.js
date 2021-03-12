@@ -21,12 +21,12 @@ export default function ContactMenuFull() {
               rel="noopener noreferrer"
             >
               <FontAwesomeIcon
+                className="contactIcon"
                 icon={info.icon}
                 aria-label={info.ariaLabel}
-                size="3x"
                 style={{ color: info.color }}
               />
-              <h6 className="labelText">{info.pLabel}</h6>
+              <h5 className="labelText">{info.pLabel}</h5>
             </Nav.Link>
           ))}
         </Nav>

@@ -4,16 +4,20 @@
 } */
 
 .linkItems {
-    color: rgba(52, 58, 64, 0.9) !important;
-    display: inline-block;
+    color: #26594a !important;
+    display:flex;
     margin: 10px;
     text-align: left;
     padding: 0.5rem 1rem !important;
+    align-items: center;
+}
+
+.contactIcon {
+    width: 3rem !important;
+    height: 3rem;
 }
 
 .labelText {
     display: inline-block;
     margin: 10px;
-    top: auto;
-    bottom: auto;
 }

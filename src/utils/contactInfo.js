@@ -26,7 +26,7 @@ const github = new ContactInfo(
   "github",
   faGithub,
   "_blank",
-  "thedanitor",
+  "https://github.com/thedanitor",
   "https://github.com/thedanitor",
   "white",
 );
@@ -35,7 +35,7 @@ const linkedIn = new ContactInfo(
   "linkedIn",
   faLinkedin,
   "_blank",
-  "dan-weikart",
+  "https://www.linkedin.com/in/dan-weikart/",
   "https://www.linkedin.com/in/dan-weikart/",
   "#0077b5",
 );

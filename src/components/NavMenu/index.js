@@ -44,7 +44,9 @@ export default function NavMenu() {
             offset={0}
             duration={500}
           >
-            Contact
+            <span className="linkHolder">
+              <span data-hover="Contact">Contact</span>
+            </span>
           </Link>
           <Link
             href="#About"
@@ -56,7 +58,9 @@ export default function NavMenu() {
             offset={-100}
             duration={500}
           >
-            About
+            <span className="linkHolder">
+              <span data-hover="About">About</span>
+            </span>
           </Link>
           <Link
             href="#Projects"
@@ -68,7 +72,9 @@ export default function NavMenu() {
             offset={-100}
             duration={500}
           >
-            Projects
+            <span className="linkHolder">
+              <span data-hover="Projects">Projects</span>
+            </span>
           </Link>
           <Link
             href="#Skills"
@@ -80,13 +86,31 @@ export default function NavMenu() {
             offset={-100}
             duration={500}
           >
-            Skills
+            <span className="linkHolder">
+              <span data-hover="Skills">Skills</span>
+            </span>
           </Link>
         </Nav>
         <Nav className="ml-auto"></Nav>
-        <Nav.Link href="#Home" id="#danText" className={brandClass}>
+
+        <Link
+            href="#Home"
+            to="Home"
+            activeClass="active"
+            className="nav-link"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+          >
+            <span className="linkHolder">
+              <span data-hover="Dan Weikart">Dan Weikart</span>
+            </span>
+          </Link>
+
+        {/* <Nav.Link href="#Home" id="#danText" className={brandClass}>
           Dan Weikart
-        </Nav.Link>
+        </Nav.Link> */}
         <Navbar.Brand href="#Home">
           <img
             id="danPhoto"

@@ -21,7 +21,7 @@
 
 .iconClose {
     font-size: 3em;
-    color: rgba(52, 58, 64, 0.9);
+    color: #26594a;
     cursor: pointer;
     position: absolute;
     top: 15vh;
@@ -38,6 +38,6 @@
 }
 
 @keyframes darkBlink {
-    from, to { color: rgba(52, 58, 64, 0.9); }
+    from, to { color: #26594a; }
     50% { color: rgba(52, 58, 64, 0.2); }
   }
