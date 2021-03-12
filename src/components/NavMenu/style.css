@@ -20,77 +20,84 @@
 
 .navbar-brand {
     padding-left: 16px;
+    display:inline-block;
 }
 
 /* navbar when opaque applied */
 .navbar.opaque {
     background-color: rgba(52, 58, 64, 0.7);
-    /* transition: background-color 0.5s ease; */
+    transition: background-color 0.5s ease;
 }
 /* navbar when trans applied */
 .navbar.trans {
     background-color: transparent;
     transition: background-color 0.5s ease;
 }
-/* nav.link */
+
 .nav-link {
     color: #03A062 !important;
     font-weight: bold;
     padding: 2rem 1rem !important;
-    /* transition: color 1s ease, font-weight 1s; */
-    
 }
+/* span to hold span with link text to make ::before text hidden */
 .linkHolder {
     overflow: hidden;
     display: inline-block;
-	/* padding: 0 4px; */
-	/* height: 1em; */
 }
-
+/* span inside linkHolder span that actually contains link */
 .linkHolder span{
     position: relative;
 	display: inline-block;
 	-webkit-transition: -webkit-transform 0.3s;
 	-moz-transition: -moz-transform 0.3s;
 	transition: transform 0.3s;
-    /* overflow: hidden; */
 }
-
+/* before link span positioned above linkHolder so hidden by default */
 .linkHolder span::before {
     position: absolute;
-    /* display: none; */
 	top: -100%;
 	content: attr(data-hover);
-	/* font-weight: 700; */
 	-webkit-transform: translate3d(0,0,0);
 	-moz-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 }
-
+/* moves link span down when hover or focused to bring ::before into view */
 .linkHolder:hover span,
 .linkHolder:focus span{
 	-webkit-transform: translateY(100%);
 	-moz-transform: translateY(100%);
 	transform: translateY(100%);
 }
-
-
+/* active navlink background and text colors swapped */
 .nav-link.active {
     background-color: #03A062;
     color: rgba(52, 58, 64, 0.7) !important;
 }
 
-/* danText  */
-#danText {
-    display: block;
-    transform: scale(1);
-    visibility: hidden;
-    transition: transform 0.5s ease, scale 0.5s ease, visibility 0.5s ease;
+@media(max-width: 650px) {
+    .navbar-brand {
+        padding: 0;
+    }
+    #danPhoto {
+        height: 0px;
+    width: 0px;
+    }
 }
 
-/* danText when show class active */
-#danText.show {
-    display: none;
-    visibility: hidden;
-    transform: scale(0);
+@media(max-width: 550px) {
+    .nav-link {
+        font-size: 0.75rem;
+        padding: 1.5rem 0.5rem !important;
+    }
+}
+@media(max-width: 400px) {
+    .nav-link {
+        padding: 1rem 0.25rem !important;
+    }
+}
+
+@media(max-width: 350px) {
+    .nav-link {
+        font-size: 0.6rem;
+    }
 }

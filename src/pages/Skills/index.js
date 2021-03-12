@@ -17,7 +17,7 @@ export default function Skills() {
             </h1>
           </Col>
         </Row>
-        <Row>
+        <Row id="#skillsRow">
           <SkillsLists/>
         </Row>
       </Container>

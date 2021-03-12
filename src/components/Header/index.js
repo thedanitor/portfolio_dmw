@@ -29,18 +29,16 @@ export default function Header() {
 
   return (
     <div id="backgroundImg">
-      <div id="bgOverlay">
-        <Container>
+        <Container className="headerCon">
           <Row>
-            <Col></Col>
-            <Col id="photoCon" className={photoConClass} xs={6}>
+            <Col id="placeHolder"></Col>
+            <Col id="photoCon" className={photoConClass} xs={6} sm={6}>
               <HeaderPhoto />
             </Col>
             <HeaderTextStack />
           </Row>
           <DownArrow />
         </Container>
-      </div>
     </div>
   );
 }

@@ -112,10 +112,6 @@ export default function NavMenu({ setContactFull }) {
               <span data-hover="Dan Weikart">Dan Weikart</span>
             </span>
           </Link>
-
-        {/* <Nav.Link href="#Home" id="#danText" className={brandClass}>
-          Dan Weikart
-        </Nav.Link> */}
         <Navbar.Brand href="#Home">
           <img
             id="danPhoto"

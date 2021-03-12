@@ -54,15 +54,47 @@
   box-shadow: none;
 }
 
-
-.projCard:hover {
-  /* outline: #03A062 solid 5px; */
-}
-
 .projCard:hover .cardImg {
   transform: scale(1.1);
 }
 
 .projCard:hover .cardInfo {
   transform: translateY(0);
+}
+
+@media(max-width: 500px) {
+  .card-text {
+    font-size: 0.75rem;
+  }
+  .projBtn {
+    margin: 5px; 
+    font-size: 0.75rem;
+  }
+  .cardInfo {
+    padding: 5px;
+  }
+}
+
+@media(max-width: 400px) {
+  .card-text {
+    font-size: 0.6rem;
+  }
+  .cardTitle {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  p {
+    margin-bottom: 5px;
+  }
+}
+
+@media(max-width: 350px) {
+  .card-text {
+    font-size: 0.5rem;
+  }
+  .projBtn {
+    margin: 3px; 
+    font-size: 0.6rem;
+    padding: 3px;
+  }
 }

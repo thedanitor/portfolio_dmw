@@ -1,0 +1,9 @@
+.skillsListItem {
+    padding: 12px 5px;
+}
+
+@media(max-width: 350px) {
+    .skillsListItem {
+        font-size: 0.75rem;
+    }
+}

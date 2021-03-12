@@ -25,14 +25,14 @@
   }
 
   /* move arrow 5vh from bottom if screen over 700px tall */
-  @media screen and (min-height:700px) and (max-width: 992px) {
+  @media(min-height:700px) and (max-width: 992px) {
     .arrowRow {
         bottom: 5vh;
     }
 }
 
   /* move arrow 15vh from bottom if screen over 800px tall */
-@media only screen and (min-height: 800px) {
+@media(min-height: 800px) {
     .arrowRow {
         bottom: 10vh;
     }

@@ -10,6 +10,14 @@
     font-weight: bold;
 }
 
-.container {
-    padding-top: 140px;
+@media(max-width: 575px) {
+    .aboutText {
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 450px) {
+    .aboutText {
+        font-size: 0.75rem;
+    }
 }

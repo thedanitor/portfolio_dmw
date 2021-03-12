@@ -16,3 +16,32 @@ h1 {
 .sectionHeader:hover {
   color: #03a062;
 }
+
+.container {
+  padding-top: 140px;
+}
+
+.row {
+  justify-content: space-around;
+}
+
+@media(max-width: 575px) {
+ h1 {
+    font-size: 2rem !important;
+  }
+  .container {
+    padding-top: 60px;
+  }
+}
+
+@media(max-width: 450px) {
+  h1 {
+    font-size: 1.5rem !important;
+  }
+}
+
+@media(max-width: 350px) {
+  h1 {
+    font-size: 1rem !important;
+  }
+}
