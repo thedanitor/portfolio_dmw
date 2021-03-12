@@ -11,12 +11,27 @@ import {
 import ContactMenu from "../ContactMenu";
 import ContactMenuFull from "../ContactMenuFull";
 
-export default function Contact() {
-  const [contactFull, setContactFull] = useState(true);
+export default function Contact({ contactFull, setContactFull }) {
+  // const [contactFull, setContactFull] = useState(true);
+
+  // const toggleContactFull = () => {
+  //   contactFull ? contactFull = false : contactFull = true;
+  // };
+
+  // const fullContact = () => {
+  //   contactFull = true;
+  //   console.log(contactFull);
+  // }
+
+  // const footerContact = () => {
+  //   contactFull = false;
+  //   console.log(contactFull);
+  // }
 
   const toggleContactFull = () => {
     contactFull ? setContactFull(false) : setContactFull(true);
-  };
+};
+
 
   return (
     <>

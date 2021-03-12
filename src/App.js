@@ -11,21 +11,26 @@ import Loading from "./pages/Loading";
 
 function App() {
   const [loading, setLoading] = useState(true);
+  const [contactFull, setContactFull] = useState(false);
 
   useEffect(() => {
     setTimeout(() => setLoading(false), 100);
   }, []);
 
+//  const toggleContactFull = () => {
+//      contactFull ? setContactFull(false) : setContactFull(true);
+//  };
+
   return (
     <>
       {loading === false ? (
         <div className="App">
-          <NavMenu />
+          <NavMenu contactFull={contactFull} setContactFull={setContactFull}/>
           <Home />
           <About />
           <Projects />
           <Skills />
-          <Contact />
+          <Contact contactFull={contactFull} setContactFull={setContactFull}/>
         </div>
       ) : (
         <div className="App">

@@ -6,7 +6,7 @@ import "./style.css";
 
 import { Link } from "react-scroll";
 
-export default function NavMenu() {
+export default function NavMenu({ contactFull, setContactFull }) {
   const [brandClass, setBrandClass] = useState("");
   const [navClass, setNavClass] = useState("trans");
 
@@ -30,6 +30,10 @@ export default function NavMenu() {
     window.addEventListener("scroll", handleScroll);
   });
 
+  const fullContact = () => {
+    setContactFull(true);
+  }
+
   return (
     <div>
       <Navbar fixed="top" className={navClass}>
@@ -43,6 +47,7 @@ export default function NavMenu() {
             smooth={true}
             offset={0}
             duration={500}
+            onClick={fullContact}
           >
             <span className="linkHolder">
               <span data-hover="Contact">Contact</span>
@@ -96,7 +101,7 @@ export default function NavMenu() {
         <Link
             href="#Home"
             to="Home"
-            activeClass="active"
+            activeClass="none"
             className="nav-link"
             spy={true}
             smooth={true}
