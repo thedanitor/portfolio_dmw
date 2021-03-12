@@ -54,7 +54,6 @@ export default function AboutText() {
         </Col>
         <Col></Col>
       </Row>
-      {/* <DownArrow /> */}
     </Container>
   );
 }

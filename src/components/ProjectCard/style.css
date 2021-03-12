@@ -9,6 +9,8 @@
 
 .cardImg {
   border-radius: 0;
+  transform: scale(1);
+  transition: transform 0.3s ease-in;
 }
 
 .cardBody {
@@ -25,8 +27,13 @@
   right: 0;
   transform: translateY(101%);
   transition: transform 0.3s ease-in;
-  /* border-top: 5px solid #03A062; */
   border: 5px solid #03A062;
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #03A062;
 }
 
 .projBtn {
@@ -50,6 +57,10 @@
 
 .projCard:hover {
   /* outline: #03A062 solid 5px; */
+}
+
+.projCard:hover .cardImg {
+  transform: scale(1.1);
 }
 
 .projCard:hover .cardInfo {
