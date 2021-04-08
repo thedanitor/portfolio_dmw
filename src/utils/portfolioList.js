@@ -10,8 +10,10 @@ import fearSettingImg from "../assets/images/fearSetting_4-3.png";
 import fearSettingWide from "../assets/images/fearSetting_Home_wide.png";
 import weatherDashboardImg from "../assets/images/weatherDashboard_4-3.png";
 import weatherDashboardWide from "../assets/images/weatherDashboard_wide.png";
-import dayPlannerImg from "../assets/images/dayPlanner_4-3.png";
-import dayPlannerWide from "../assets/images/dayPlanner_wide.png";
+import pokedexImg from "../assets/images/pokedex_4-3.png";
+import pokedexWide from "../assets/images/pokedex_wide.png";
+// import dayPlannerImg from "../assets/images/dayPlanner_4-3.png";
+// import dayPlannerWide from "../assets/images/dayPlanner_wide.png";
 
 
 function ProjectData(
@@ -84,6 +86,17 @@ const employeeRosterProject = new ProjectData(
   "#employeeRoster"
 );
 
+const pokedexProject = new ProjectData(
+  "Pokedex",
+  pokedexImg,
+  pokedexWide,
+  "HTML / CSS / JavaScript / PokeAPI",
+  "Complete Pokedex app with all 898 Pokemon, sorted by generation.",
+  "https://thedanitor.github.io/pokedex/",
+  "400ms",
+  "#pokedex"
+);
+
 const fearSetterProject = new ProjectData(
   "Fear Setter",
   fearSettingImg,
@@ -92,7 +105,7 @@ const fearSetterProject = new ProjectData(
   "This app was created to help the user to conquer their fears. User can keep track of fears and is incentivised to overcome them.",
   "https://thedanitor.github.io/Project-1_Fear-Setter/",
   "https://github.com/thedanitor/Project-1_Fear-Setter",
-  "400ms",
+  "500ms",
   "#fearSetter"
 );
 
@@ -104,31 +117,31 @@ const weatherProject = new ProjectData(
   "Search for current weather conditions and forecast for the next 5 days in any city.",
   "https://thedanitor.github.io/Weather_Dashboard/",
   "https://github.com/thedanitor/Weather_Dashboard",
-  "500ms",
+  "600ms",
   "#weatherDashboard"
 );
 
-const dayPlannerProject = new ProjectData(
-  "Workday Scheduler App",
-  dayPlannerImg,
-  dayPlannerWide,
-  "HTML / CSS / JavaScript",
-  "Simple workday planner app. Save meetings to local storage.",
-  "https://thedanitor.github.io/Work_Day_Scheduler/",
-  "https://github.com/thedanitor/Work_Day_Scheduler",
-  "600ms",
-  "#dayPlanner"
-
-);
+// const dayPlannerProject = new ProjectData(
+//   "Workday Scheduler App",
+//   dayPlannerImg,
+//   dayPlannerWide,
+//   "HTML / CSS / JavaScript",
+//   "Simple workday planner app. Save meetings to local storage.",
+//   "https://thedanitor.github.io/Work_Day_Scheduler/",
+//   "https://github.com/thedanitor/Work_Day_Scheduler",
+//   "700ms",
+//   "#dayPlanner"
+// );
 
 let portfolioList = [
   lernProject,
   aqirProject,
   burgerProject,
   employeeRosterProject,
+  pokedexProject,
   fearSetterProject,
   weatherProject,
-  dayPlannerProject,
+  // dayPlannerProject,
   
 ];
 

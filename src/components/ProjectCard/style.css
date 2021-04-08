@@ -19,7 +19,7 @@
 }
 
 .cardInfo {
-  color: #FFF;
+  color: #fff;
   background-color: rgba(52, 58, 64, 0.9);
   position: absolute;
   left: 0;
@@ -27,30 +27,36 @@
   right: 0;
   transform: translateY(101%);
   transition: transform 0.3s ease-in;
-  border: 5px solid #03A062;
+  border: 5px solid #03a062;
 }
 
 .cardTitle {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #03A062;
+  color: #03a062;
 }
 
 .projBtn {
-  background-color: #03A062;
+  background-color: #03a062;
   border: #fff;
   color: #fff;
   border-radius: 0;
   margin: 5px 10px;
 }
 
-.projBtn:hover {  
+.projBtn:hover {
   background-color: #00da84;
 }
 
 .projBtn:focus {
   background-color: #07ff9d;
-  outline: 2px solid #03A062    ;      
+  outline: 2px solid #03a062;
+  box-shadow: none;
+}
+
+.projBtn:active {
+  background-color: #07ff9d;
+  outline: 2px solid #03a062;
   box-shadow: none;
 }
 
@@ -62,12 +68,12 @@
   transform: translateY(0);
 }
 
-@media(max-width: 500px) {
+@media (max-width: 500px) {
   .card-text {
     font-size: 0.75rem;
   }
   .projBtn {
-    margin: 5px; 
+    margin: 5px;
     font-size: 0.75rem;
   }
   .cardInfo {
@@ -75,7 +81,7 @@
   }
 }
 
-@media(max-width: 400px) {
+@media (max-width: 400px) {
   .card-text {
     font-size: 0.6rem;
   }
@@ -88,12 +94,12 @@
   }
 }
 
-@media(max-width: 350px) {
+@media (max-width: 350px) {
   .card-text {
     font-size: 0.5rem;
   }
   .projBtn {
-    margin: 3px; 
+    margin: 3px;
     font-size: 0.6rem;
     padding: 3px;
   }
