@@ -5,3 +5,8 @@
 .cardBg {
     background-color: #000;
 }
+
+.projContainer small {
+    font-family: 'Roboto', sans-serif;
+    color: #03a062;
+}

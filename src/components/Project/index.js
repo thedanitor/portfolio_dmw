@@ -18,6 +18,7 @@ export default function Project() {
         <span className="sectionHeader">my </span>
         <span className="sectionHeader">projects </span>
       </h1>
+      <small>Heroku apps may take some time to load. Refresh page if there is a timeout.</small>
       <Row>
         {portfolioList.map((proj, index) => (
           <Col className="cardCol" xs={12} md={6} key={index}>
