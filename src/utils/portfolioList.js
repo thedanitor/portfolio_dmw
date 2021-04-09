@@ -6,15 +6,14 @@ import burgerImg from "../assets/images/burger_4-3.png";
 import burgerWide from "../assets/images/burger_wide.png";
 import employeeRosterImg from "../assets/images/employeeRoster_4-3.png";
 import employeeRosterWide from "../assets/images/employeeRoster_wide.png";
-import fearSettingImg from "../assets/images/fearSetting_4-3.png";
-import fearSettingWide from "../assets/images/fearSetting_Home_wide.png";
-import weatherDashboardImg from "../assets/images/weatherDashboard_4-3.png";
-import weatherDashboardWide from "../assets/images/weatherDashboard_wide.png";
+// import fearSettingImg from "../assets/images/fearSetting_4-3.png";
+// import fearSettingWide from "../assets/images/fearSetting_Home_wide.png";
+// import weatherDashboardImg from "../assets/images/weatherDashboard_4-3.png";
+// import weatherDashboardWide from "../assets/images/weatherDashboard_wide.png";
 import pokedexImg from "../assets/images/pokedex_4-3.png";
 import pokedexWide from "../assets/images/pokedex_wide.png";
-// import dayPlannerImg from "../assets/images/dayPlanner_4-3.png";
-// import dayPlannerWide from "../assets/images/dayPlanner_wide.png";
-
+import disasterMapImg from "../assets/images/disaster_map_4-3.png";
+import disasterMapWide from "../assets/images/disaster_map_wide.png";
 
 function ProjectData(
   name,
@@ -62,6 +61,18 @@ const aqirProject = new ProjectData(
   "#aqir"
 );
 
+const disasterProject = new ProjectData(
+  "Disaster Map",
+  disasterMapImg,
+  disasterMapWide,
+  "HTML / CSS / JavaScript / React / Google Maps API",
+  "World map of current natural disasters using NASA's EONET API.",
+  "https://disaster-map-dmw.herokuapp.com/",
+  "https://github.com/thedanitor/disaster_map",
+  "200ms",
+  "#disasterMap"
+);
+
 const burgerProject = new ProjectData(
   "Add-A-Burger",
   burgerImg,
@@ -97,52 +108,39 @@ const pokedexProject = new ProjectData(
   "#pokedex"
 );
 
-const fearSetterProject = new ProjectData(
-  "Fear Setter",
-  fearSettingImg,
-  fearSettingWide,
-  "HTML / CSS / JavaScript / jQuery / UIkit",
-  "This app was created to help the user to conquer their fears. User can keep track of fears and is incentivised to overcome them.",
-  "https://thedanitor.github.io/Project-1_Fear-Setter/",
-  "https://github.com/thedanitor/Project-1_Fear-Setter",
-  "500ms",
-  "#fearSetter"
-);
+// const fearSetterProject = new ProjectData(
+//   "Fear Setter",
+//   fearSettingImg,
+//   fearSettingWide,
+//   "HTML / CSS / JavaScript / jQuery / UIkit",
+//   "This app was created to help the user to conquer their fears. User can keep track of fears and is incentivised to overcome them.",
+//   "https://thedanitor.github.io/Project-1_Fear-Setter/",
+//   "https://github.com/thedanitor/Project-1_Fear-Setter",
+//   "500ms",
+//   "#fearSetter"
+// );
 
-const weatherProject = new ProjectData(
-  "Weather Dashboard",
-  weatherDashboardImg,
-  weatherDashboardWide,
-  "HTML / CSS / JavaScript / jQuery",
-  "Search for current weather conditions and forecast for the next 5 days in any city.",
-  "https://thedanitor.github.io/Weather_Dashboard/",
-  "https://github.com/thedanitor/Weather_Dashboard",
-  "600ms",
-  "#weatherDashboard"
-);
-
-// const dayPlannerProject = new ProjectData(
-//   "Workday Scheduler App",
-//   dayPlannerImg,
-//   dayPlannerWide,
-//   "HTML / CSS / JavaScript",
-//   "Simple workday planner app. Save meetings to local storage.",
-//   "https://thedanitor.github.io/Work_Day_Scheduler/",
-//   "https://github.com/thedanitor/Work_Day_Scheduler",
-//   "700ms",
-//   "#dayPlanner"
+// const weatherProject = new ProjectData(
+//   "Weather Dashboard",
+//   weatherDashboardImg,
+//   weatherDashboardWide,
+//   "HTML / CSS / JavaScript / jQuery",
+//   "Search for current weather conditions and forecast for the next 5 days in any city.",
+//   "https://thedanitor.github.io/Weather_Dashboard/",
+//   "https://github.com/thedanitor/Weather_Dashboard",
+//   "600ms",
+//   "#weatherDashboard"
 // );
 
 let portfolioList = [
   lernProject,
   aqirProject,
+  disasterProject,
   burgerProject,
   employeeRosterProject,
   pokedexProject,
-  fearSetterProject,
-  weatherProject,
-  // dayPlannerProject,
-  
+  // fearSetterProject,
+  // weatherProject,
 ];
 
 export default portfolioList;
